@@ -216,3 +216,28 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# C object files and compiled libraries (*.so is covered above)
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.dylib
+
+# C executables
+*.exe
+a.out
+/knn-c/knn-main
+
+# Debug symbols and coverage output
+*.pdb
+*.ilk
+*.dSYM/
+*.gcda
+*.gcno
+*.gcov
+
+# Temporary C runner and local compiler error output
+tempCodeRunnerFile.c
+/knn-c/hata.txt
