@@ -8,6 +8,7 @@ verify my implementations, and explore their behavior through experiments.
 ##Implementations
 
 -Linear Regression
+
 -KNN
 
 ##Experiments and Results
@@ -77,7 +78,11 @@ the loss curve.
 
 ## Next Steps
 Implement and experiment with the following algorithms:
+
 -Logistic regression
+
 -Naive-Bayes
+
 -Decision tree
+
 -K-means
