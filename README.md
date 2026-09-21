@@ -5,15 +5,15 @@ algorithms using Python and NumPy.
 My goal is to understand the mathematics behind the models,
 verify my implementations, and explore their behavior through experiments.
 
-##Implementations
+## Implementations
 
 -Linear Regression
 
 -KNN
 
-##Experiments and Results
+## Experiments and Results
 
-###Gradient Descent vs Normal Equation
+### Gradient Descent vs Normal Equation
 
 I compared both methods on the same synthetic dataset with 200 samples, two features, and noise.
 Gradient descent was tested with 1000 iterations and a learning rate of 0.01.
