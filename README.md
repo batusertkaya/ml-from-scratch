@@ -35,4 +35,17 @@ Both methods produced nearly identical parameter estimates.
 The estimates differ from the true values because noise was
 added to the targets.
 
+![GD vs normal equation](figures/GD_vs_normal.png)
+
+The graph shows how the training MSE changes during gradient descent.
+The blue curve represents gradient descent, while the dashed red line
+shows the MSE obtained by the normal equation.
+
+The loss decreases rapidly during the initial iterations and then
+approaches approximately 3.9322, matching the normal-equation result.
+This indicates that gradient descent converged close to the
+least-squares solution for this dataset.
+
+The loss does not reach zero because noise was added to the
+targets, so a linear model cannot fit every sample exactly.
 
