@@ -44,8 +44,8 @@ def main():
     plt.title("GD Convergence vs Normal Equation")
     plt.legend()
 
-    plt.savefig("GD_vs_normal.png", dpi=150, bbox_inches="tight")
     plt.show()
+    plt.savefig("figures/GD_vs_normal.png", dpi=120, bbox_inches="tight")
 
 
 
