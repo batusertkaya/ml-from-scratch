@@ -15,6 +15,7 @@ verify my implementations, and explore their behavior through experiments.
 ###Gradient Descent vs Normal Equation
 
 I compared both methods on the same synthetic dataset with 200 samples, two features, and noise.
+Gradient descent was tested with 1000 iterations and a learning rate of 0.01.
 
 | Method | Training MSE |
 |--------|-------------:|
@@ -49,3 +50,34 @@ least-squares solution for this dataset.
 The loss does not reach zero because noise was added to the
 targets, so a linear model cannot fit every sample exactly.
 
+## Installation
+
+```bash
+git clone https://github.com/batusertkaya/ml-from-scratch.git
+cd ml-from-scratch
+python -m pip install numpy matplotlib
+```
+
+## Usage
+
+Run from the repository root:
+
+```bash
+python -m experiments.linear_regression.compare_solvers
+```
+
+This prints the learned parameters and MSE values, then displays
+the loss curve.
+
+## Project Structure
+
+- `models/`: Model implementations.
+- `experiments/`: Experiments using those implementations.
+- `figures/`: Figures obtained from experiments.
+
+## Next Steps
+Implement and experiment with the following algorithms:
+-Logistic regression
+-Naive-Bayes
+-Decision tree
+-K-means
