@@ -51,6 +51,37 @@ least-squares solution for this dataset.
 The loss does not reach zero because noise was added to the
 targets, so a linear model cannot fit every sample exactly.
 
+### Linear Regression on California Housing
+
+This experiment evaluates linear regression on the California Housing
+dataset. The task is to predict the median house value in a census
+block group using eight input features.
+
+#### Setup
+
+- Random seed: `0`
+- Training/test split: `80% / 20%`
+- Features standardized using training-set means and standard deviations
+- Gradient descent learning rate: `0.01`
+- Number of iterations: `1000`
+
+The same standardization parameters are applied to the test set
+to avoid data leakage.
+
+#### Results
+
+| Evaluation | MSE |
+|------------|----:|
+| Model — training set | 0.534747 |
+| Model — test set | 0.539462 |
+| Mean baseline — test set | 1.273854 |
+
+The baseline predicts the mean training target for every test sample.
+Its test MSE provides a reference for evaluating whether the model
+improves on a constant prediction.
+The model achieved a lower test MSE than the mean baseline,
+showing that the input features helped predict unseen targets.
+
 ## Installation
 
 ```bash
@@ -69,6 +100,12 @@ python -m experiments.linear_regression.compare_solvers
 
 This prints the learned parameters and MSE values, then displays
 the loss curve.
+
+```bash
+python -m experiments.linear_regression.california_housing
+```
+
+This prints the MSE values.
 
 ## Project Structure
 
